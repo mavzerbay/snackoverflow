@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-private enum StringItems: String {
-    case facebookLogin = "Sign In with Facebook"
-}
-
-
 struct FacebookButton: View {
     var onTap: () -> Void
     
@@ -21,14 +16,22 @@ struct FacebookButton: View {
         } label: {
             HStack {
                 Image(IconItems.Social.facebook.rawValue)
-                Text(StringItems.facebookLogin.rawValue)
+                Text(LocaleKeys.Auth.facebook.rawValue.locale())
                 Spacer()
             }
             .tint(.white)
-            .background(Color.deepSkyBlue)
+            .font(.title2)
+            .padding(.all, PagePadding.All.normal.rawValue)
         }
-        .buttonStyle(.borderedProminent)
         .buttonBorderShape(.roundedRectangle)
         .controlSize(.large)
+        .background(Color.deepSkyBlue)
+        .cornerRadius(RadiusItems.radius)
+    }
+}
+
+struct FacebookButton_Previews: PreviewProvider {
+    static var previews: some View {
+        FacebookButton(onTap: {})
     }
 }
