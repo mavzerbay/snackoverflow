@@ -8,13 +8,17 @@
 import SwiftUI
 
 
-struct LocaleKeys{
-    enum Auth:String{
+struct LocaleKeys {
+    enum Auth: String {
         case facebook = "signInFacebook"
         case google = "signInGoogle"
         case apple = "signInApple"
         case email = "signupWithEmail"
- }
+    }
+    
+    enum Buttons: String{
+        case getStarted = "getStarted"
+    }
 }
 
 extension String {

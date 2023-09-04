@@ -1,14 +1,19 @@
 //
-//  EmailButton.swift
+//  NormalButton.swift
 //  snackoverflow
 //
-//  Created by Erbay MAVZER on 28.08.2023.
+//  Created by Erbay MAVZER on 4.09.2023.
 //
 
 import SwiftUI
 
-struct EmailButton: View {
+/// It's a normal button for project
+///
+/// [onTap] will return user interaction
+/// [title] it shows button name
+struct NormalButton: View {
     var onTap: () -> Void
+    var title:String
 
     var body: some View {
         Button {
@@ -16,23 +21,23 @@ struct EmailButton: View {
         } label: {
             HStack {
                 Spacer()
-                Text(LocaleKeys.Auth.email.rawValue.locale()).font(.system(size:FontSizes.headline,weight: .semibold))
+                Text(title.locale())
                 Spacer()
             }
-                .tint(Color.peach)
-                .font(.title3)
+                .tint(.white)
+                .font(.title2)
                 .fontWeight(.black)
                 .padding(.all, PagePadding.All.normal.rawValue)
         }
             .buttonBorderShape(.roundedRectangle)
             .controlSize(.large)
-            .background(.white)
+            .background(Color.peach)
             .cornerRadius(RadiusItems.radius)
     }
 }
 
-struct EmailButton_Previews: PreviewProvider {
+struct NormalButton_Previews: PreviewProvider {
     static var previews: some View {
-        EmailButton{}
+        NormalButton(onTap: {}, title: "Sample")
     }
 }
