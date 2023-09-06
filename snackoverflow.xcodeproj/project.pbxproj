@@ -27,6 +27,8 @@
 		B68CCF8E2AA5F528005BD2DA /* FontSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CCF8D2AA5F528005BD2DA /* FontSizes.swift */; };
 		B68CCF902AA5F697005BD2DA /* OnBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CCF8F2AA5F697005BD2DA /* OnBoardModel.swift */; };
 		B68CCF922AA5F96A005BD2DA /* ViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CCF912AA5F96A005BD2DA /* ViewHeight.swift */; };
+		B68CCF952AA868F2005BD2DA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CCF942AA868F2005BD2DA /* LoginView.swift */; };
+		B68CCF982AA86DD9005BD2DA /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CCF972AA86DD9005BD2DA /* TextFieldModifier.swift */; };
 		B6C9E0B52A9C96C400F258C6 /* SnackOverFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9E0B42A9C96C400F258C6 /* SnackOverFlowApp.swift */; };
 		B6C9E0B72A9C96C400F258C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9E0B62A9C96C400F258C6 /* ContentView.swift */; };
 		B6C9E0B92A9C96C500F258C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C9E0B82A9C96C500F258C6 /* Assets.xcassets */; };
@@ -77,6 +79,8 @@
 		B68CCF8D2AA5F528005BD2DA /* FontSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizes.swift; sourceTree = "<group>"; };
 		B68CCF8F2AA5F697005BD2DA /* OnBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardModel.swift; sourceTree = "<group>"; };
 		B68CCF912AA5F96A005BD2DA /* ViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeight.swift; sourceTree = "<group>"; };
+		B68CCF942AA868F2005BD2DA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B68CCF972AA86DD9005BD2DA /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		B6C9E0B12A9C96C400F258C6 /* snackoverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snackoverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C9E0B42A9C96C400F258C6 /* SnackOverFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackOverFlowApp.swift; sourceTree = "<group>"; };
 		B6C9E0B62A9C96C400F258C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +199,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B68CCF932AA868E3005BD2DA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B68CCF942AA868F2005BD2DA /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B68CCF962AA86DC7005BD2DA /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B68CCF972AA86DD9005BD2DA /* TextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		B6C9E0A82A9C96C400F258C6 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +277,7 @@
 		B6C9E0DE2A9C976E00F258C6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B68CCF962AA86DC7005BD2DA /* ViewModifiers */,
 				B68CCF8C2AA5F512005BD2DA /* Fonts */,
 				B6042B012A9CDAD300735732 /* Locale */,
 				B67600C52A9C9D0A00EFBC38 /* Extensions */,
@@ -292,6 +313,7 @@
 		B6C9E0E22A9C97A800F258C6 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				B68CCF932AA868E3005BD2DA /* Login */,
 				B6042B1A2A9DEB1300735732 /* OnBoard */,
 				B6C9E0E32A9C97C500F258C6 /* Welcome */,
 			);
@@ -453,6 +475,7 @@
 				B6042B172A9CE27300735732 /* EmailButton.swift in Sources */,
 				B6042B082A9CDBB700735732 /* LocaleKeys.swift in Sources */,
 				B6C9E0B72A9C96C400F258C6 /* ContentView.swift in Sources */,
+				B68CCF952AA868F2005BD2DA /* LoginView.swift in Sources */,
 				B67600C72A9C9D2000EFBC38 /* Colors.swift in Sources */,
 				B6042B0C2A9CDDBC00735732 /* Custom+EdgeInsets.swift in Sources */,
 				B67600C92A9C9D6C00EFBC38 /* Icons.swift in Sources */,
@@ -466,6 +489,7 @@
 				B67600C42A9C9B0C00EFBC38 /* Images.swift in Sources */,
 				B6042B152A9CE23B00735732 /* ViewSize.swift in Sources */,
 				B6042B0E2A9CDE4100735732 /* PagePadding.swift in Sources */,
+				B68CCF982AA86DD9005BD2DA /* TextFieldModifier.swift in Sources */,
 				B6C9E0E52A9C97E400F258C6 /* WelcomeView.swift in Sources */,
 				B68CCF902AA5F697005BD2DA /* OnBoardModel.swift in Sources */,
 				B67600CF2A9CD2CB00EFBC38 /* EdgeInsets.swift in Sources */,
