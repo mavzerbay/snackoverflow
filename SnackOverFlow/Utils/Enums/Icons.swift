@@ -17,4 +17,9 @@ struct IconItems {
         case google = "ic_google"
         case apple = "ic_apple"
     }
+    
+    enum Global: String {
+        case mail = "mail"
+        case lock = "lock"
+    }
 }

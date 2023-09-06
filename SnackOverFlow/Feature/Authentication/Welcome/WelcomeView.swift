@@ -10,7 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         ZStack {
-            Image(Images.juice.rawValue).resizable()
+            Image(Images.Authentication.welcome.rawValue).resizable()
             Color.black.opacity(0.3)
             BodyView()
         }

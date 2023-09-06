@@ -11,6 +11,14 @@
 "signInApple"="Sign In with Apple";
 "signupWithEmail"="Sign Up with Email";
 
+//Login
+"welcomeBack" = "Welcome Back";
+"createAccount" = "Create account";
+"terms" = "By clicking \"Create account\", I agree to SnackOverflow's [TOS](www.google.com) and [Privacy Policy.](www.google.com)";
 
 //Buttons
 "getStarted" = "Get Started";
+
+//General
+"emailHint"="Write your email";
+"passwordHint"="Write your password";
